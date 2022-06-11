@@ -1,0 +1,27 @@
+.list {
+  position: relative;
+}
+
+.item {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.btn {
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 2px 5px;
+  min-width: 50px;
+  border: 0.5px solid gray;
+  text-transform: uppercase;
+  background-color: rgba(212, 18, 18, 0.5);
+}
+.arrow {
+  fill: rgb(69, 69, 69);
+  transform: rotate(180deg);
+  margin-right: 10px;
+
+  right: 5px;
+}
