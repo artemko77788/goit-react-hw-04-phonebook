@@ -1,7 +1,7 @@
 import ContactForm from 'components/ContactForm';
 import Contacts from 'components/Contacts';
 import Filter from 'components/Filter';
-import useLocalStorage from 'hoogs/hoogs';
+import useLocalStorage from 'hooks/hooks';
 import { useState } from 'react';
 
 import s from './App.module.css';
@@ -40,7 +40,7 @@ function App() {
     <div className={s.app}>
       <h1 className={s.text}>Phonebook</h1>
       <ContactForm submit={formSubmitHandler} />
-      <h1 className={s.text}>Contacts</h1>
+      <h2 className={s.text}>Contacts</h2>
       <Filter filter={filterNamesAdd} />
       <Contacts data={data} findId={findIdEl} />
     </div>
