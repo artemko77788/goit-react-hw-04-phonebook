@@ -6,9 +6,7 @@ import s from './Contacts.module.css';
 const Contacts = ({ data, findId }) => {
   return (
     <ul className={s.list}>
-      {data.map(el => {
-        const { name, id, number } = el;
-
+      {data.map(({ name, id, number }) => {
         return (
           <li key={id} className={s.item}>
             <span>{name}</span>: <span>{number}</span>
